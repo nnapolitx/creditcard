@@ -1,0 +1,25 @@
+body {
+    font-size: 1.25rem;
+    color: white;
+    font-family: monospace;
+    font-variant: small-caps;
+}
+
+.card {
+    background-color: #64748b;
+    border: 1.5px solid #1e293b;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 325px;
+    padding: 8px;
+}
+
+svg {
+    width: 48px;
+    height: 32px;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
