@@ -113,6 +113,7 @@
 .credit-card-form .cvc {
     width: 3ch;
     font-family: monospace;
+    padding: 2px 4px;
 }
 
 .credit-card-form .front::before {
@@ -125,4 +126,8 @@
     z-index: -1;
     top: 2px;
     left: -90px;
+}
+
+.credit-card-form input:focus{
+    outline: #090d13 inset;
 }
