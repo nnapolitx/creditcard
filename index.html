@@ -19,10 +19,13 @@
                 </div>
                 <fieldset class="cc-num">
                     <legend>Credit Card Number</legend>
-                    <input type="tel" id="cc-1" name="cc-1" aria-label="first four digits" required>
-                    <input type="tel" id="cc-2" name="cc-2" aria-label="second four digits" required>
-                    <input type="tel" id="cc-3" name="cc-3" aria-label="third four digits" required>
-                    <input type="tel" id="cc-4" name="cc-4" aria-label="last four digits" required>
+                    <label for="cc-1">Card number</label>
+                    <div class="cc-inputs">
+                        <input type="tel" id="cc-1" name="cc-1" aria-label="first four digits" maxlength="4" required>
+                        <input type="tel" id="cc-2" name="cc-2" aria-label="second four digits" maxlength="4" required>
+                        <input type="tel" id="cc-3" name="cc-3" aria-label="third four digits" maxlength="4" required>
+                        <input type="tel" id="cc-4" name="cc-4" aria-label="last four digits" maxlength="4" required>
+                    </div>
                 </fieldset>
                 <div class="card-info-wrapper">
                     <div class="name">
@@ -30,7 +33,7 @@
                         <input type="text" id="cc-name" required>
                     </div>
                     <fieldset class="date">
-                        <legend class="cc-exp">Valid Thru</legend>
+                        <legend>Valid Thru</legend>
                         <select name="month" id="month" aria-label="Expiration month">
                             <optgroup label="Month">
                                 <option value="1">01</option>
@@ -64,6 +67,7 @@
                     </div>
                 </div>
             </form>
+
         </body>
     </body>
 </html>
