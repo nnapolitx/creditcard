@@ -1,6 +1,6 @@
 .credit-card-form {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
     position: relative;
     text-transform: uppercase;
 }
@@ -12,7 +12,7 @@
     border-radius: 8px;
     width: 325px;
     height: 150px;
-    padding: 8px 16px;
+    padding: 16px 16px;
 }
 
 .credit-card-form .front {
@@ -30,8 +30,8 @@
 }
 
 .credit-card-form .logo {
-    width: 48px;
-    height: 40px;
+    width: 56px;
+    height: 42px;
 }
 
 .credit-card-form .bank {
@@ -63,6 +63,54 @@
     font-family: monospace;
 }
 
-.credit-card-form .cc-inputs input{
+.credit-card-form .cc-numbers input{
     width: 4ch;
+}
+
+.credit-card-form input,
+.credit-card-form select {
+    padding: 2px 4px;
+    border: none;
+    border-radius: 3px;
+    appearance: none;
+}
+
+.credit-card-form label {
+    font-size: .7rem;
+}
+
+.credit-card-form .card-info-wrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+.credit-card-form .name {
+    flex-grow: 1;
+}
+
+.credit-card-form .back {
+    position: absolute;
+    top: 2rem;
+    left: 3.5rem;
+}
+
+.credit-card-form .stripe {
+    background-color: #090d13;
+    height: 35px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.credit-card-form .cvc-wrap {
+    position: absolute;
+    bottom: 2.6rem;
+    right: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.credit-card-form .cvc {
+    width: 3ch;
+    font-family: monospace;
 }
